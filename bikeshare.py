@@ -1,9 +1,10 @@
+#important necessary modules and functions
 import pandas as pd
 import numpy as np
 import time
 import datetime
 
-CITY_CSV = { 'chicago': 'chicago.csv',
+CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
@@ -34,7 +35,7 @@ def get_filters():
     while True:
         #run the loop until the user has entered one of the 3 predefined cities
         city = input('\nWould you like to choose Chicago, New York City or Washington? Please choose one of these 3 cities by name: ').lower()
-        if city in CITY_CSV.keys():
+        if city in CITY_DATA.keys():
             print('\nAllright we use the Data of {}.'.format(city.title())) # Answer to the user
             break
         else:
@@ -76,7 +77,8 @@ def get_filters():
     #little easter_egg in get filters function
     """
     Here is a little Easter_Egg hidden in the Function of get_filters.
-    It asks the user, if he wants to have a little bit fun with an easter egg during that program or not
+    It asks the user, if he wants to have a little bit fun with an easter egg during that program or not.
+    I hope you will enjoy it :-)
 
     Returns:
         (str) - global varibale with a yes or no statement to activate or deactive the easter eggs in all other functions
@@ -118,7 +120,7 @@ def load_data(city, month, day):
     """
 
     #load the data of the input given city and put it into a datamframe
-    df = pd.read_csv(CITY_CSV[city])
+    df = pd.read_csv(CITY_DATA[city])
 
     #convert the column of Start Time into datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -317,7 +319,7 @@ def user_stats(df, city):
 
 def main():
     while True:
-        #run this loop and ask the user if he would like to restart again at the end. There are also two additional cases when the easter_egg was activate from user. 
+        #run this loop and ask the user if he would like to restart again at the end. There are also two additional cases when the easter_egg was activate from user.
         city, month, day = get_filters()
         df = load_data(city, month, day)
         data_head(df) #new function for the first 5 rows of the chosen data (head)
