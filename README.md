@@ -35,7 +35,7 @@ With this given Data the calculation starts and show the user the following resu
 - earliest, most recent, most common year of birth (only available for NYC and Chicago)
 
 ### Files used
-This files were used for this project:
+This 3 files were used for this project:
 - chichago.csv
 - washington.csv
 - new_york_city.csv
@@ -45,5 +45,6 @@ Cheers to this great Udacity program, that learned me such so much for my new jo
 Greeting also goes out to the reviewers and mentors for their time to give me always really good feedback or helped me with admin-bugs on my working laptop for example.
 
 I will definitely recommend this program to all my work colleagues and friends.
+
 Like, share and subscribe!
 URL: https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
