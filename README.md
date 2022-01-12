@@ -42,7 +42,7 @@ This 3 files were used for this project:
 
 ### Credits
 Cheers to this great Udacity program, that learned me such so much for my new job as an Data Scientist.
-Greeting also goes out to the reviewers and mentors for their time to give me always really good feedback or helped me with admin-bugs on my working laptop for example.
+Greetings also goes out to the reviewers and mentors for their time to give me always really good feedback or helped me with admin-bugs on my working laptop for example.
 
 I will definitely recommend this program to all my work colleagues and friends.
 
